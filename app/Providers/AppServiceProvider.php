@@ -13,7 +13,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        // テーブル設計前の初期設定
+        \Schema::defaultStringLength(191);
     }
 
     /**
